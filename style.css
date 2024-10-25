@@ -1,0 +1,26 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Pacifico&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+/*Content Style*/
+body {
+    display: flex;
+}
+
+header {
+    display: block;
+    background-color: #99582a;
+}
+
+main {
+    display: block;
+}
+
+footer {
+    display: block;
+    background-color: #99582a;
+}
+
+.container {
+    align-items: center;
+    background-color: #ddb892;
+}
