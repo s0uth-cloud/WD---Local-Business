@@ -17,6 +17,7 @@ body {
     background-color: #99582a;
     align-items: center;
     justify-content: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .navigation--buttons {
@@ -31,143 +32,128 @@ a {
 }
 
 .container {
-    display: block;
-    width: 100%;
+    display: flex;
+    width: 100vw;
     height: 100vh;
     background-color: #ffe6a7;
+    align-items: center;
+    justify-content: center;
 }
 
 #top {
-    background: url("/assets/cafe_bg.webp") no-repeat center;
+    background: url("assets/cafe_bg.webp") no-repeat center;
     background-size: 100%;
 }
 
 .top--content {
     display: flex;
-    position: absolute;
-    top: 53.5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 50%;
+    width: 50vw;
     height: 80vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.25);
     border-radius: 16px;
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(255, 255, 255, 1);
+    margin-top: 40px;
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+    justify-content: center;
 }
 
 #logo {
-    position: relative;
-    top: 5%;
-    width: 275px;
-    height: 200px;
-    margin: 5px;
+    width: 55vh;
+    height: 40vh;
     object-fit: cover;
 }
 
 .title {
-    position: relative;
-    top: -6.5%;
+    font: 4rem "Pacifico", Cursive;
     padding: 0%;
-    font: 5rem "Pacifico", Cursive;
-    color: #0a0908;
-    margin: 1px;
-    text-wrap: nowrap;
+    margin: 0%;
+    position: relative;
+    top: -10%;
 }
 
 .subtitle {
+    font:600 1.7rem "Playfair Display", sans-serif;
+    padding: 0%;
+    margin: 0%;
     position: relative;
-    top: -10%;
-    font: 600 1.8rem "Playfair Display", serif;
-    color: #0a0908;
-    word-spacing: 15px;
-    margin: 1px;
+    top: -12%;
 }
 
 #shop--button {
-    position: relative;
-    top: -6%;
-    width: 150px;
+    width: 15vw;
+    height: 7vh;
     border: none;
-    border-radius: 10px;
-    padding: 5px;
-    font: 600 1rem "Crimson Text", serif;
-    color: #f2f4f3;
+    border-radius: 20px;
+    position: relative;
+    top: -5%;
     background-color: #0a0908;
+    color: #f2f4f3;
+    font: 600 1rem "Crimson Text", serif;
 }
 
 #products {
-    box-shadow: 0 10px 15px gray;
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
 }
 
 .product--content {
-    display: grid;
-    width: 60%;
-    height: 90vh;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
-.product--category {
     display: flex;
-    width: 100%;
-    height: 50vh;
+    width: 90vw;
+    height: 90vh;
     align-items: center;
     justify-content: center;
-    gap: 20px;
+    flex-direction: column;
 }
 
 .section--title {
-    font: 1000 2.5rem "Crimson Text", serif;
-    padding: 0;
-    margin: 0;
+    font: bold 2.5rem "Crimson Text", serif;
+    margin: 0%;
+    color: #432818;
 }
 
 .description {
     font: 600 1rem "Crimson Text", serif;
-    padding: 10px 20px;
+    color: #432818;
+    padding: 1% 20%;
+    margin: 0%;
+    text-align: center;
 }
 
-#coffee {
-    width: 30%;
-    height: 100%;
-    background-color: #f2f4f3;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+.product--container {
+    display: flex;
+    width: 70vw;
+    height: 60vh;
+    gap: 5vw;
+    align-items: center;
+    justify-content: center;
 }
 
-#pastry {
-    width: 30%;
-    height: 100%;
+.product--card {
+    width: 18vw;
+    height: 50vh;
     background-color: #f2f4f3;
+    color: #432818;
     border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
 }
 
-#cake {
-    width: 30%;
-    height: 100%;
-    background-color: #f2f4f3;
-    border-radius: 20px;
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+.product--image {
+    width: 32vh;
+    height: 32vh;
+    border: 2px solid #432818;
+    border-radius: 15px;
+    position: relative;
+    top: 3%;
 }
 
 #reviews {
     position: relative;
     z-index: -1;
-    background: lightgrey;
-}
-
-#about {
-    box-shadow: 0 -10px 15px gray;
+    background-color: lightgray;
 }
 
 footer {
